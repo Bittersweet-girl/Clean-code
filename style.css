@@ -41,10 +41,13 @@
   margin: 0;
   padding: 0px;
 }
-.tasks-block__item, .title {
+.tasks-block__item, 
+.title {
   list-style: none;
 }
-.text-inputs,.checkbox,.btn{
+.text-inputs,
+.checkbox,
+.btn{
   outline: none;
 }
 .btn {
@@ -59,6 +62,7 @@
 .btn:hover {
   color: #3a3A3a;
 }
+
 /* Heading */
 .title,
 .add-item__new {
