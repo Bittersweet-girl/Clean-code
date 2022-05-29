@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  </head>
+  <body class="body">
+    <header class="header">
+      <img src="./eisenhower-matrix.jpg" alt="eisenhower-matrix" class="header__img">
+      <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    </header>
+
+    <main class="main">
+
+      <div class="add-item">
+        <label for="new-task" class="lbl add-item__new">Add Item</label>
+        <div class="add-item-task-wrapper">
+          <input id="new-task" class="task text-inputs" type="text">
+          <button class="btn">Add</button>
+        </div>
+      </div>
+
+      <h3 class="title">Todo</h3>
+      <ul id="incomplete-tasks" class="tasks-block">
+        <li class="tasks-block__item">
+          <input type="checkbox" class="checkbox">
+          <label class="lbl task">Pay Bills</label>
+          <input type="text" class="task text-inputs">
+          <button class="btn_edit btn">Edit</button>
+          <button class="btn_delete btn"><img src="./remove.svg" alt="remove-item" class="btn__img_del"></button>
+        </li>
+        <li class="tasks-block__item editMode">
+          <input type="checkbox" class="checkbox">
+          <label class="lbl task">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="task text-inputs">
+          <button class="btn_edit btn">Save</button>
+          <button class="btn_delete btn"><img src="./remove.svg" alt="remove-item" class="btn__img_del"></button>
+        </li>
+      </ul>
+
+      <h3 class="title">Completed</h3>
+      <ul id="completed-tasks" class="tasks-block tasks-block_complete">
+        <li class="tasks-block__item">
+          <input type="checkbox" checked class="checkbox">
+          <label class="lbl task">See the Doctor</label>
+          <input type="text" class="task text-inputs">
+          <button class="btn_edit btn">Edit</button>
+          <button class="btn_delete btn"><img src="./remove.svg" alt="remove-item" class="btn__img_del"></button>
+        </li>
+      </ul>
+
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

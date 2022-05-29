@@ -1,0 +1,152 @@
+/* Basic Style */
+.body {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Lato, sans-serif;
+}
+.header {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
+}
+.header__img {
+  width: 100%;
+}
+.header__link {
+  font-family: fantasy, cursive;
+}
+
+@media (max-width:768px) {
+
+  .header { 
+    text-align: center;
+  }
+  
+}
+.main {
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
+}
+.task {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
+}
+.add-item-task-wrapper {
+  display: flex;
+}
+.tasks-block {
+  margin: 0;
+  padding: 0px;
+}
+.tasks-block__item, 
+.title {
+  list-style: none;
+}
+.text-inputs,
+.checkbox,
+.btn{
+  outline: none;
+}
+.btn {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #3a3a3a;
+}
+
+/* Heading */
+.title,
+.add-item__new {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.text-inputs {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+.text-inputs:focus {
+  color: #333;
+}
+
+/* New Task */
+.add-item__new {
+  display: block;
+  margin: 0 0 20px;
+}
+.add-item-task-wrapper > .text-inputs {
+  width: 318px;
+}
+
+/* Task list */
+.tasks-block__item {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tasks-block__item > * {
+  vertical-align: middle;
+}
+
+.tasks-block__item > .checkbox {
+  margin: 0 10px;
+}
+.tasks-block__item > .lbl {
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 226px;
+}
+.tasks-block__item > .text-inputs {
+  width: 226px;
+  display: none;
+}
+.btn__img_del {
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+.btn__img_del:hover {
+  transform: rotateZ(0);
+}
+
+/* Completed */
+.tasks-block_complete .lbl {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Task */
+
+.editMode .text-inputs {
+  display: inline-block;
+  width: 224px;
+}
+
+.editMode .lbl {
+  display: none;
+}
